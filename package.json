@@ -1,0 +1,39 @@
+{
+	"name": "pi-guided-onboarding",
+	"private": true,
+	"version": "0.1.0",
+	"description": "Pi extensions for scientists and engineers new to AI agents: careful levels, model probes, benchmarks, and guided setup",
+	"keywords": [
+		"pi-package"
+	],
+	"type": "module",
+	"pi": {
+		"extensions": [
+			"./careful/index.ts",
+			"./capability/index.ts",
+			"./benchmark/index.ts",
+			"./onboarding/index.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-agent-core": "*",
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*",
+		"typebox": "*"
+	},
+	"scripts": {
+		"check": "tsc --noEmit",
+		"test": "vitest --run"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-agent-core": "1.6.0",
+		"@earendil-works/pi-ai": "1.6.0",
+		"@earendil-works/pi-coding-agent": "1.6.0",
+		"@earendil-works/pi-tui": "1.6.0",
+		"@types/node": "22.19.19",
+		"typebox": "1.3.27",
+		"typescript": "7.0.2",
+		"vitest": "4.1.12"
+	}
+}
